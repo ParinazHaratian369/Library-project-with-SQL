@@ -8,3 +8,4 @@ class Database:
             password = "12345678",
             database = "bookstore"
         )
+        self.cursor = self.connection.cursor()
