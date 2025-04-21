@@ -9,3 +9,6 @@ class Book:
 class BookStore:
     def __init__(self, db):
         self.db = db
+
+    def add_book(self, book):
+        pass

@@ -60,7 +60,7 @@ class BookstoreApp:
             return
         
         book = Book(title, author, genre, price, quantity)
-
+        self.bookstore.add_book(book)
         
 
 if __name__ == "__main__":
