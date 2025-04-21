@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from database import Database
 from models import Book, BookStore
+from tkinter import messagebox
 class BookstoreApp:
     def __init__(self, root):
         self.root = root
@@ -47,6 +48,10 @@ class BookstoreApp:
         price = self.price_entry.get()
         quantity = self.quantity_entry.get()
 
+        if not title or not author or not genre or not price or not quantity:
+            messagebox.showerror("Input Error", "All fiels must be filled out")
+            return
+        
 
 if __name__ == "__main__":
     root = ctk.CTk()
