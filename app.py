@@ -15,12 +15,17 @@ class BookstoreApp:
         self.title_label = ctk.CTkLabel(root, text="Title")
         self.title_label.grid(row=0, column=0, padx=10, pady=10)
         self.title_entry = ctk.CTkEntry(root)
-        self.title_entry.grid(row=0, column=1, padx=10, pady=10)
+        self.title_entry.grid(row=0, column=1)
 
         self.author_label = ctk.CTkLabel(root, text="Author")
         self.author_label.grid(row=1, column=0, padx=10, pady=10)
         self.author_entry = ctk.CTkEntry(root)
-        self.author_entry.grid(row=1, column=1, padx=10, pady=10)
+        self.author_entry.grid(row=1, column=1)
+
+        self.genre_label = ctk.CTkLabel(root, text="Genre")
+        self.genre_label.grid(row=2, column=0, padx=10, pady=10)
+        self.genre_entry = ctk.CTkEntry(root)
+        self.genre_entry.grid(row=2, column=1)
 
 if __name__ == "__main__":
     root = ctk.CTk()
