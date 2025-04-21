@@ -5,3 +5,7 @@ class Book:
         self.genre = genre
         self.price = price
         self.quantity = quantity
+
+class BookStore:
+    def __init__(self, db):
+        self.db = db
