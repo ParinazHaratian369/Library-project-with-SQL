@@ -37,8 +37,12 @@ class BookstoreApp:
         self.quantity_entry = ctk.CTkEntry(root)
         self.quantity_entry.grid(row=4, column=1)
 
-        self.add_button = ctk.CTkButton(root, text="Add Book")
+        self.add_button = ctk.CTkButton(root, text="Add Book", command=self.add_book)
         self.add_button.grid(row=5, column=1, pady=10)
+
+    def add_book(self):
+        pass
+
 
 if __name__ == "__main__":
     root = ctk.CTk()
