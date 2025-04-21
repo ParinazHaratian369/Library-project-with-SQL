@@ -8,7 +8,8 @@ class BookstoreApp:
         self.root.geometry("400x500")
 
         # database connection
-        self.db = Database()        
+        self.db = Database()
+        self.bookstore = BookStore(self.db)       
 
 if __name__ == "__main__":
     root = ctk.CTk()
