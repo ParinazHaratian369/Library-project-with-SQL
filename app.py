@@ -59,6 +59,9 @@ class BookstoreApp:
             messagebox.showerror("Input Error", "Price and Quantity must be valid numbers")
             return
         
+        book = Book(title, author, genre, price, quantity)
+
+        
 
 if __name__ == "__main__":
     root = ctk.CTk()
