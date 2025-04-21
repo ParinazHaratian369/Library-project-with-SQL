@@ -61,6 +61,7 @@ class BookstoreApp:
         
         book = Book(title, author, genre, price, quantity)
         self.bookstore.add_book(book)
+        messagebox.showinfo("Success", "Book added successfully!")
         
 
 if __name__ == "__main__":
