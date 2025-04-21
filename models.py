@@ -11,4 +11,6 @@ class BookStore:
         self.db = db
 
     def add_book(self, book):
-        pass
+        query = "INSERT INTO book (title, author, genre, price, quantity) VALUES (%s, %s, %s, %s, %s)"
+        params = (book.title, book.author, book.genre, book.price, book.quantity)
+        
