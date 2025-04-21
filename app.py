@@ -27,6 +27,11 @@ class BookstoreApp:
         self.genre_entry = ctk.CTkEntry(root)
         self.genre_entry.grid(row=2, column=1)
 
+        self.price_label = ctk.CTkLabel(root, text="Price")
+        self.price_label.grid(row=3, column=0, padx=10, pady=10)
+        self.price_entry = ctk.CTkEntry(root)
+        self.price_entry.grid(row=3, column=1)
+
 if __name__ == "__main__":
     root = ctk.CTk()
     app = BookstoreApp(root)
