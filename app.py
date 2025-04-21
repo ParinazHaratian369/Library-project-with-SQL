@@ -1,5 +1,6 @@
 import customtkinter as ctk
 from database import Database
+from models import Book, BookStore
 class BookstoreApp:
     def __init__(self, root):
         self.root = root
@@ -7,7 +8,7 @@ class BookstoreApp:
         self.root.geometry("400x500")
 
         # database connection
-        self.db = Database()
+        self.db = Database()        
 
 if __name__ == "__main__":
     root = ctk.CTk()
