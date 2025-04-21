@@ -52,6 +52,13 @@ class BookstoreApp:
             messagebox.showerror("Input Error", "All fiels must be filled out")
             return
         
+        try:
+            price = float(price)
+            quantity = int(quantity)
+        except ValueError:
+            messagebox.showerror("Input Error", "Price and Quantity must be valid numbers")
+            return
+        
 
 if __name__ == "__main__":
     root = ctk.CTk()
