@@ -41,7 +41,11 @@ class BookstoreApp:
         self.add_button.grid(row=5, column=1, pady=10)
 
     def add_book(self):
-        pass
+        title = self.title_entry.get()
+        author = self.author_entry.get()
+        genre = self.genre_entry.get()
+        price = self.price_entry.get()
+        quantity = self.quantity_entry.get()
 
 
 if __name__ == "__main__":
