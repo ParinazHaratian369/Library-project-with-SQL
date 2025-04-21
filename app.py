@@ -9,7 +9,13 @@ class BookstoreApp:
 
         # database connection
         self.db = Database()
-        self.bookstore = BookStore(self.db)       
+        self.bookstore = BookStore(self.db) 
+
+        # GUI elements
+        self.title_label = ctk.CTkLabel(root, text="Title")
+        self.title_label.grid(row=0, column=0, padx=10, pady=10)
+        self.title_entry = ctk.CTkEntry(root)
+        self.title_entry.grid(row=0, column=1, padx=10, pady=10)
 
 if __name__ == "__main__":
     root = ctk.CTk()
