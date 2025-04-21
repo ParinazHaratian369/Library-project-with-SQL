@@ -17,6 +17,11 @@ class BookstoreApp:
         self.title_entry = ctk.CTkEntry(root)
         self.title_entry.grid(row=0, column=1, padx=10, pady=10)
 
+        self.author_label = ctk.CTkLabel(root, text="Author")
+        self.author_label.grid(row=1, column=0, padx=10, pady=10)
+        self.author_entry = ctk.CTkEntry(root)
+        self.author_entry.grid(row=1, column=1, padx=10, pady=10)
+
 if __name__ == "__main__":
     root = ctk.CTk()
     app = BookstoreApp(root)
