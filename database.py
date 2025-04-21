@@ -9,3 +9,7 @@ class Database:
             database = "bookstore"
         )
         self.cursor = self.connection.cursor()
+
+    def execute_query(self, query, params):
+        self.cursor.execute(query, params)
+        self.connection.commit()
